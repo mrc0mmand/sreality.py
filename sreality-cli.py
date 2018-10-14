@@ -13,4 +13,4 @@ if __name__ == "__main__":
 
     for page in sr.fetch(limit=2, **args):
         for estate in page:
-            print("{} - {} ({})".format(estate["name"], estate["locality"], estate["price"]))
+            print("{} - {} ({:,} Kc)".format(estate["name"], estate["locality"], estate["price"]))
